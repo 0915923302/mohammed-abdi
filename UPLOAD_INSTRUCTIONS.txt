@@ -1,0 +1,9 @@
+UPLOAD THESE FILES TO THE ROOT OF YOUR GITHUB REPOSITORY:
+- index.html
+- profile.jpg (if included)
+- website-qr.png (if included)
+- Mohammed_Abdi_CV.docx
+- Mohammed_Abdi_Application_Letter.pdf
+
+Then commit the changes. The public website will link directly to both original documents.
+Anyone who can access the public website can download the documents.

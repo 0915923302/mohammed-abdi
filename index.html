@@ -1,167 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#101827">
-<meta name="description" content="Mohammed Abdi — personal social hub, portfolio, blog and contact page. From Dire Dawa, Ethiopia.">
-<title>Mohammed Abdi | Personal Hub</title>
+<title>Mohammed Abdi | Professional Profile</title>
 <style>
-:root{color-scheme:dark;--gold:#e8bd65;--muted:#c2ccda;--panel:#17263a;--line:#3a4d66}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;min-height:100vh;padding:22px 14px 40px;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:#f7f8fb;background:radial-gradient(circle at 50% 0%,#263b57 0,#111d30 38%,#0b1220 75%);background-size:100% 150%;animation:bgGlow 16s ease-in-out infinite alternate}
-@keyframes bgGlow{0%{background-position:50% 0}100%{background-position:50% 100%}}
-.wrap{width:min(100%,760px);margin:auto;border:1px solid var(--line);border-radius:26px;background:linear-gradient(160deg,rgba(27,43,64,.96),rgba(13,22,36,.97));box-shadow:0 24px 80px #0008;overflow:hidden}
-header{text-align:center;padding:34px 24px 22px}
-.avatar{width:148px;height:148px;border-radius:50%;object-fit:cover;border:3px solid var(--gold);box-shadow:0 8px 28px #0006}
-h1{margin:16px 0 4px;font-size:clamp(28px,6vw,40px)}
-.place{margin:8px 0 18px;color:var(--gold);font-weight:700}
-.intro{max-width:590px;margin:0 auto;color:var(--muted);line-height:1.75;font-size:17px}
-.actions,.nav,.socials{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:18px}
-button,.btn{border:1px solid #52647b;border-radius:12px;padding:11px 16px;background:#1b2a40;color:white;font:inherit;font-weight:700;text-decoration:none;cursor:pointer}
-button:hover,.btn:hover{border-color:var(--gold);background:#263a55}
-.lang-switch{background:#243750;color:var(--gold)}
-nav{position:sticky;top:0;z-index:4;background:#101b2beF;border-top:1px solid #34465e;border-bottom:1px solid #34465e;padding:12px;display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
-nav a{color:#edf2f8;text-decoration:none;padding:8px 11px;border-radius:9px;font-size:14px}
-nav a:hover{background:#263a55;color:var(--gold)}
-section{padding:26px clamp(18px,5vw,38px);border-bottom:1px solid #2d4058;scroll-margin-top:76px}
-h2{margin:0 0 14px;color:var(--gold);font-size:21px}
-p{line-height:1.7;color:var(--muted)}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:13px}
-.card{padding:17px;border:1px solid #3c5069;border-radius:15px;background:#17263a}
-.card h3{margin:0 0 8px;font-size:17px}
-.card p{margin:0;font-size:14px}
-.socials{display:grid;grid-template-columns:repeat(auto-fit,minmax(135px,1fr))}
-.socials a{text-align:center;padding:14px;border:1px solid #43536a;border-radius:13px;background:#1b2a40;color:white;text-decoration:none;font-weight:750}
-.socials a:hover{border-color:var(--gold);background:#243750}
-form{display:grid;gap:10px}
-input,textarea{width:100%;padding:13px;border-radius:10px;border:1px solid #52647b;background:#0e1929;color:white;font:inherit}
-textarea{min-height:110px;resize:vertical}
-.qr{display:block;width:min(230px,75%);margin:14px auto;border-radius:12px;background:white;padding:10px}
-.small{font-size:13px;color:#98a8bc}
-footer{text-align:center;padding:22px;color:#93a2b6;font-size:13px}
-[dir="rtl"]{text-align:right}
-@media(prefers-reduced-motion:reduce){body{animation:none}html{scroll-behavior:auto}}
-</style>
-</head>
-<body>
-<main class="wrap">
+:root{color-scheme:dark;--gold:#e8bd65;--muted:#c2ccda}
+*{box-sizing:border-box}body{margin:0;padding:24px 14px;background:radial-gradient(circle at top,#263b57,#0b1220 72%);color:#f7f8fb;font-family:system-ui,Arial,sans-serif}
+main{max-width:760px;margin:auto;border:1px solid #3a4d66;border-radius:24px;background:#142238;padding:28px 22px;box-shadow:0 20px 60px #0008}
+header{text-align:center}.avatar{width:140px;height:140px;border-radius:50%;object-fit:cover;border:3px solid var(--gold)}
+h1{margin:14px 0 4px}.place{color:var(--gold);font-weight:700}h2{color:var(--gold);margin-top:28px}
+p,li{color:var(--muted);line-height:1.7}.card{padding:18px;border:1px solid #40536c;border-radius:15px;background:#1b2a40;margin:12px 0}
+a.button{display:inline-block;text-decoration:none;color:#fff;background:#263a55;border:1px solid #61718a;padding:12px 16px;border-radius:11px;font-weight:700;margin:6px 6px 6px 0}
+a.button:hover{border-color:var(--gold)}.small{font-size:13px;color:#9eacc0}
+</style></head><body><main>
 <header>
-<img class="avatar" src="profile.jpg" alt="Portrait of Mohammed Abdi">
-<h1>Mohammed Abdi</h1>
-<div class="place">🇪🇹 From Dire Dawa, Ethiopia</div>
-<p class="intro" data-en="Welcome to my personal hub. I’m passionate about technology, creativity, lifelong learning, and personal growth. I believe in dreaming boldly, working consistently, and staying humble."
-data-om="Baga gara fuula dhuunfaa koo dhuftan. Teeknooloojii, kalaqa, barachuu itti fufiinsaan, fi guddina dhuunfaa nan jaalladha. Abjuu guddaa qabaachuu, hojii irratti cichuu, fi gad of qabuu nan amana.">Welcome to my personal hub. I’m passionate about technology, creativity, lifelong learning, and personal growth. I believe in dreaming boldly, working consistently, and staying humble.</p>
-<div class="actions">
-<button class="lang-switch" id="languageButton" type="button">Afaan Oromoo</button>
-<button type="button" id="shareButton">↗ Share my website</button>
-<a class="btn" href="#contact">Contact me</a>
-</div>
+<img class="avatar" src="profile.jpg" alt="Mohammed Abdi">
+<h1>Mohammed Abdi Aliyi</h1><div class="place">🇪🇹 Dire Dawa, Ethiopia</div>
+<p>Surveying Technology graduate with experience in land administration and cadastral surveying.</p>
 </header>
-
-<nav aria-label="Main navigation">
-<a href="#social">Social</a><a href="#portfolio">Portfolio</a><a href="#blog">Blog</a><a href="#cv">My CV</a><a href="#contact">Contact</a><a href="#qr">QR Code</a>
-</nav>
-
-<section id="social">
-<h2 data-en="Connect with me" data-om="Na waliin wal qunnamaa">Connect with me</h2>
-<p data-en="Follow my pages and stay connected." data-om="Fuulawwan koo hordofaa; wal haa qunnannu.">Follow my pages and stay connected.</p>
-<div class="socials">
-<a href="https://www.facebook.com/libban.abdusamad" target="_blank" rel="noopener">Facebook</a>
-<a href="https://www.tiktok.com/@mohammed.dagii" target="_blank" rel="noopener">TikTok</a>
-<a href="https://youtube.com/@mohammedibnuabdi5028" target="_blank" rel="noopener">YouTube</a>
-<a href="https://wa.me/251915923302" target="_blank" rel="noopener">WhatsApp</a>
+<section><h2>Professional Summary</h2>
+<p>Motivated and detail-oriented Surveying Technology graduate with a B.Sc. degree and two years of professional experience in land administration and cadastral surveying. Skilled in field surveying, land parcel measurement, boundary identification, GPS and Total Station operation, survey data processing, mapping, and geospatial applications.</p>
+</section>
+<section><h2>Technical Skills</h2>
+<div class="card"><ul>
+<li>AutoCAD – survey drafting and technical drawing</li>
+<li>ArcGIS / QGIS – GIS mapping, spatial data analysis, and digitization</li>
+<li>GPS and Total Station – field data collection and surveying operations</li>
+<li>Microsoft Office – Word, Excel, and PowerPoint</li>
+</ul></div></section>
+<section><h2>Professional Documents</h2>
+<div class="card"><h3>Curriculum Vitae (CV)</h3>
+<p>Download the CV document provided by Mohammed Abdi.</p>
+<a class="button" href="Mohammed_Abdi_CV.docx" download>Download CV (DOCX)</a>
 </div>
-</section>
-
-<section id="portfolio">
-<h2 data-en="My Portfolio" data-om="Hojiiwwan Koo">My Portfolio</h2>
-<p data-en="A place to introduce my interests and the work I create. I will add project details and examples here as they grow."
-data-om="Bakka fedhiiwwan koo fi hojiiwwan ani hojjedhu ittiin beeksisu. Pirojektoota fi fakkeenya hojii koo yeroo yeroon asitti nan dabala.">A place to introduce my interests and the work I create. I will add project details and examples here as they grow.</p>
-<div class="grid">
-<article class="card"><h3 data-en="Technology" data-om="Teeknooloojii">Technology</h3><p data-en="Exploring useful digital tools, websites, and new technology." data-om="Meeshaalee dijitaalaa, marsariitiiwwan, fi teeknooloojii haaraa qorachuu.">Exploring useful digital tools, websites, and new technology.</p></article>
-<article class="card"><h3 data-en="Creative projects" data-om="Pirojektoota Kalaqaa">Creative projects</h3><p data-en="Music, media, design, and creative ideas." data-om="Muuziqaa, miidiyaa, dizaayinii, fi yaadota kalaqaa.">Music, media, design, and creative ideas.</p></article>
-<article class="card"><h3 data-en="Learning & growth" data-om="Barnootaa fi Guddina">Learning & growth</h3><p data-en="Sharing knowledge and learning something new every day." data-om="Beekumsa waliif qooduu fi guyyaa guyyaan waan haaraa barachuu.">Sharing knowledge and learning something new every day.</p></article>
+<div class="card"><h3>Application Letter</h3>
+<p>Download the original application letter PDF.</p>
+<a class="button" href="Mohammed_Abdi_Application_Letter.pdf" download>Download Application Letter (PDF)</a>
 </div>
+<p class="small">These documents are shared publicly. Anyone with this website link may view or download them.</p>
 </section>
-
-<section id="blog">
-<h2 data-en="My Blog" data-om="Barreeffamoota Koo">My Blog</h2>
-<p data-en="Notes, ideas, lessons, and useful information will appear here."
-data-om="Yaadannoo, yaadota, barnoota, fi odeeffannoo faayidaa qabu asitti maxxansa.">Notes, ideas, lessons, and useful information will appear here.</p>
-<div class="grid">
-<article class="card"><h3 data-en="Learning every day" data-om="Guyyaa Guyyaan Barachuu">Learning every day</h3><p data-en="Small steps and consistent effort can create meaningful progress." data-om="Tarkaanfiileen xixiqqoonii fi hojii itti fufiinsa qabu guddina guddaa fiduu danda'u.">Small steps and consistent effort can create meaningful progress.</p></article>
-<article class="card"><h3 data-en="Dream big, stay humble" data-om="Abjuu Guddaa, Gad Of Qabi">Dream big, stay humble</h3><p data-en="A reminder to keep aiming high while respecting others." data-om="Kaayyoo guddaa qabaachuun yeroo hunda namoota kabajuu akka hin daganne yaadachiisa.">A reminder to keep aiming high while respecting others.</p></article>
-</div>
-<p class="small" data-en="These are starter posts. You can replace them with your own articles." data-om="Kun barreeffamoota jalqabaa fakkeenyaati. Barreeffamoota kee ittiin bakka buusuu dandeessa.">These are starter posts. You can replace them with your own articles.</p>
+<section><h2>Social Media & Contact</h2>
+<a class="button" href="https://www.facebook.com/libban.abdusamad" target="_blank" rel="noopener">Facebook</a>
+<a class="button" href="https://www.tiktok.com/@mohammed.dagii" target="_blank" rel="noopener">TikTok</a>
+<a class="button" href="https://youtube.com/@mohammedibnuabdi5028" target="_blank" rel="noopener">YouTube</a>
+<a class="button" href="https://wa.me/251915923302" target="_blank" rel="noopener">WhatsApp</a>
+<a class="button" href="mailto:mohammedibnuabdi@gmail.com">Email</a>
 </section>
-
-<section id="cv">
-<h2 data-en="My CV / Profile" data-om="CV / Odeeffannoo Koo">My CV / Profile</h2>
-<div class="card">
-<h3>Mohammed Abdi</h3>
-<p data-en="Based in Dire Dawa, Ethiopia. Interests: technology, creativity, knowledge, and personal growth."
-data-om="Dire Dawa, Itoophiyaa keessa jiraadha. Fedhiiwwan: teeknooloojii, kalaqa, beekumsa, fi guddina dhuunfaa.">Based in Dire Dawa, Ethiopia. Interests: technology, creativity, knowledge, and personal growth.</p>
-<p data-en="This is a starter profile, not a full employment CV. Add your education, experience, skills, and certificates when ready."
-data-om="Kun odeeffannoo jalqabaa dha; CV hojii guutuu miti. Barnoota, muuxannoo hojii, dandeettii, fi ragaa gahumsa kee yeroo qophooftu itti dabali.">This is a starter profile, not a full employment CV. Add your education, experience, skills, and certificates when ready.</p>
-<button type="button" onclick="window.print()" data-en="Print / Save this profile as PDF" data-om="Odeeffannoo kana maxxansi / PDF godhi">Print / Save this profile as PDF</button>
-</div>
-</section>
-
-<section id="contact">
-<h2 data-en="Contact me" data-om="Na Quunnamaa">Contact me</h2>
-<p data-en="Send me a message by email or contact me on WhatsApp."
-data-om="Emailiin ergaa naaf ergaa ykn WhatsApp irratti na quunnamaa.">Send me a message by email or contact me on WhatsApp.</p>
-<div class="actions">
-<a class="btn" href="mailto:mohammedibnuabdi@gmail.com">Email Mohammed</a>
-<a class="btn" href="https://wa.me/251915923302" target="_blank" rel="noopener">WhatsApp me</a>
-</div>
-<form id="contactForm">
-<input id="senderName" required placeholder="Your name" aria-label="Your name">
-<input id="senderEmail" type="email" placeholder="Your email (optional)" aria-label="Your email">
-<textarea id="senderMessage" required placeholder="Write your message..." aria-label="Your message"></textarea>
-<button type="submit">Send message by email</button>
-</form>
-<p class="small" data-en="The form opens your email app with your message prepared; it does not send anything without your approval."
-data-om="Foormiin kun appii email kee ergaa qophaa'een bana; hayyama kee malee ofumaan hin ergu.">The form opens your email app with your message prepared; it does not send anything without your approval.</p>
-</section>
-
-<section id="qr">
-<h2 data-en="Share with QR Code" data-om="QR Code Waliin Qoodadhu">Share with QR Code</h2>
-<p data-en="Scan this code to open my personal website." data-om="Website koo banuuf koodii kana scan godhaa.">Scan this code to open my personal website.</p>
-<img class="qr" src="website-qr.png" alt="QR code linking to Mohammed Abdi's website">
-<p class="small" style="text-align:center">https://0915923302.github.io/mohammed-abdi/</p>
-</section>
-
-<footer>Dream Big. Work Hard. Stay Humble.<br>© 2026 Mohammed Abdi</footer>
-</main>
-<script>
-let currentLanguage = "en";
-const languageButton = document.getElementById("languageButton");
-languageButton.addEventListener("click", () => {
-  currentLanguage = currentLanguage === "en" ? "om" : "en";
-  document.querySelectorAll("[data-en][data-om]").forEach(el => {
-    el.textContent = el.dataset[currentLanguage];
-  });
-  languageButton.textContent = currentLanguage === "en" ? "Afaan Oromoo" : "English";
-  document.documentElement.lang = currentLanguage === "om" ? "om" : "en";
-});
-document.getElementById("shareButton").addEventListener("click", async () => {
-  const shareData = {title:"Mohammed Abdi | Personal Hub", text:"Visit my personal page:", url:location.href};
-  if (navigator.share) { try { await navigator.share(shareData); } catch(e) {} }
-  else if (navigator.clipboard) { await navigator.clipboard.writeText(location.href); alert("Website link copied!"); }
-  else { prompt("Copy my website link:", location.href); }
-});
-document.getElementById("contactForm").addEventListener("submit", e => {
-  e.preventDefault();
-  const name = document.getElementById("senderName").value.trim();
-  const email = document.getElementById("senderEmail").value.trim();
-  const message = document.getElementById("senderMessage").value.trim();
-  const subject = encodeURIComponent("Website message from " + name);
-  const body = encodeURIComponent("Name: " + name + "\nEmail: " + email + "\n\n" + message);
-  location.href = "mailto:mohammedibnuabdi@gmail.com?subject=" + subject + "&body=" + body;
-});
-</script>
-</body>
-</html>
+<footer class="small" style="text-align:center;margin-top:28px">Dream Big. Work Hard. Stay Humble.</footer>
+</main></body></html>
