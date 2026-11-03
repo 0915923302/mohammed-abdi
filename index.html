@@ -9,8 +9,15 @@
 <style>
 :root{color-scheme:dark;--gold:#e8bd65;--muted:#c2ccda}
 *{box-sizing:border-box}
-body{margin:0;min-height:100vh;padding:32px 16px;display:grid;place-items:center;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:#f7f8fb;background:radial-gradient(circle at 50% 0%,#263b57 0,#111d30 38%,#0b1220 75%)}
-main{width:min(100%,480px);padding:30px 24px 24px;border:1px solid #34445b;border-radius:26px;background:linear-gradient(160deg,rgba(27,43,64,.97),rgba(13,22,36,.98));box-shadow:0 24px 80px #0008;text-align:center}
+body{margin:0;min-height:100vh;padding:32px 16px;display:grid;place-items:center;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:#f7f8fb;background:linear-gradient(-45deg,#07111f,#142b46,#17243a,#0b1424);background-size:400% 400%;animation:backgroundDrift 18s ease infinite;position:relative;isolation:isolate;overflow-x:hidden}
+body::before,body::after{content:"";position:fixed;z-index:-1;width:55vmax;height:55vmax;border-radius:50%;filter:blur(75px);opacity:.22;pointer-events:none}
+body::before{background:#d5a94f;top:-30vmax;left:-20vmax;animation:goldGlow 22s ease-in-out infinite alternate}
+body::after{background:#397fbd;right:-25vmax;bottom:-32vmax;animation:blueGlow 25s ease-in-out infinite alternate}
+@keyframes backgroundDrift{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
+@keyframes goldGlow{from{transform:translate(0,0) scale(.9)}to{transform:translate(28vw,22vh) scale(1.15)}}
+@keyframes blueGlow{from{transform:translate(0,0) scale(1)}to{transform:translate(-24vw,-18vh) scale(1.2)}}
+@media(prefers-reduced-motion:reduce){body,body::before,body::after{animation:none}}
+main{width:min(100%,480px);padding:30px 24px 24px;border:1px solid #34445b;border-radius:26px;background:linear-gradient(160deg,rgba(27,43,64,.88),rgba(13,22,36,.90));backdrop-filter:blur(10px);box-shadow:0 24px 80px #0008;text-align:center}
 .avatar{width:150px;height:150px;margin:0 auto 18px;border-radius:50%;object-fit:cover;border:3px solid var(--gold);box-shadow:0 8px 28px #0006}
 h1{margin:0;font-size:30px}.place{margin:8px 0 22px;color:var(--gold);font-weight:650}
 .section-label{color:var(--gold);font-size:12px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;margin:0 0 7px}
